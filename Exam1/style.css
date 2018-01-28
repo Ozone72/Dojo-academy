@@ -1,6 +1,10 @@
 * {
     outline: 1px dotted red;
 }
+h1 {
+    color: white;
+    margin: auto;
+}
 
 .container {
     width: 800px;
@@ -22,6 +26,7 @@
 .green-strip {
     height: 55%;
     background-color: #A7D395;
+    color: #D9DC9B;
 }
 .purp-sqr {
     height: 125px;
@@ -29,6 +34,13 @@
     display: inline-block;
     margin: 10px;
     padding: 5px;
+    background-color: #38326D;
+    color: #D9DC9B;
+}
+
+.main {
+    height: 50%;
+    max-width: 100%;
 }
 
 .purp-rect {
@@ -36,8 +48,43 @@
     width: 250px;
     display: inline-block;
     margin: 25px;
+    background-color: #38326D;
+    color: #D9DC9B;
 }
 
+.main-grn-separator {
+    height: 140px;
+    width: 90%;
+    margin-left: 45px;
+    background-color: #A7D395;
+    color: white;
+}
+.nav-left {
+    width: 33%;
+    height: 425px;
+    background-color: #A7D395;
+    margin: 25px 25px 25px 10px;
+    vertical-align: top;
+    display: inline-block;
+}
+
+a {
+    color: #0E7E12;
+    margin: 35px 0px 0px 60px; 
+    display: inline-block;
+}
+
+.link-info {
+    width: 60%;
+    height: 425px;
+    display: inline-block;
+}
+.purp-content {
+    width: 100%;
+    height: 50px;
+    margin: 25px 0px 0px 0px;
+    background-color: #38326D;
+}
 .header-foot {
     height: 20%;
 }
@@ -49,12 +96,6 @@
 }
 
 
-h1 {
-    color: white;
-    margin: auto;
-}
 
-.main {
-    height: 50%;
-    max-width: 100%;
-}
+
+
