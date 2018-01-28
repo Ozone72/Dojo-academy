@@ -1,3 +1,60 @@
 * {
     outline: 1px dotted red;
 }
+
+.container {
+    width: 800px;
+    height: 2160px;
+    overflow: auto;
+}
+
+.header {
+    height: 20%;
+    max-width: 100%;
+    background-color: #38326D; 
+}
+.header-top {
+    height: 25%;
+    width:100%;
+    padding-left: 10px;
+    padding-top: 10px;
+}
+.green-strip {
+    height: 55%;
+    background-color: #A7D395;
+}
+.purp-sqr {
+    height: 125px;
+    width: 125px;
+    display: inline-block;
+    margin: 10px;
+    padding: 5px;
+}
+
+.purp-rect {
+    height: 150px;
+    width: 250px;
+    display: inline-block;
+    margin: 25px;
+}
+
+.header-foot {
+    height: 20%;
+}
+
+.lil-button {
+    display: inline-block;
+    margin: 50px;
+    /* padding: 15px 20px 0px 20px */
+}
+
+
+h1 {
+    color: white;
+    margin: auto;
+}
+
+.main {
+    height: 50%;
+    max-width: 100%;
+}
