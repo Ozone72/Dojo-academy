@@ -47,7 +47,7 @@ h1 {
     height: 150px;
     width: 250px;
     display: inline-block;
-    margin: 25px;
+    margin: 50px 25px 25px 85px;
     background-color: #38326D;
     color: #D9DC9B;
 }
