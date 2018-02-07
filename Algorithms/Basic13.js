@@ -91,18 +91,24 @@
 
 // Swap String For Array Negative Values
 // Replace any negative array values with 'Dojo'.
-function basic7(array){
-  for (let index = 0; index < array.length; index++) {
-    if(array[index]<0){
-      array[index]='Dojo';
-    }
-  }
-  return array;
-}
-console.log(basic7([1,3,-76,4,3,-1]));
+// function basic7(array){
+//   for (let index = 0; index < array.length; index++) {
+//     if(array[index]<0){
+//       array[index]='Dojo';
+//     }
+//   }
+//   return array;
+// }
+// console.log(basic7([1,3,-76,4,3,-1]));
 
 // Print Odds 1-255
 // Print all odd integers from 1 to 255.
+// function basic8(){
+//   for (let index = 1; index < 255; index+=2) {
+//     console.log(index);
+//   }
+// }
+// basic8();
 
 // Iterate and Print Array
 // Iterate through a given array, printing each value.
