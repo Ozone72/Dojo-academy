@@ -28,19 +28,27 @@
 // Given an array, find and print its largest element.
 // Inputs: an array 
 // Outputs: print to screen the largest element of the given array
-function basic3(array){
-    let max = array[0];
-    for (let index = 0; index < array.length; index++) {
-        if (array[index]>max) {
-            max = array[index];
-        }
-    }
-    console.log(`The largest element in the array is: ${max}`);
-}
-basic3([1,5,4,6,7,65,34,-23,0]);
+// function basic3(array){
+//     let max = array[0];
+//     for (let index = 0; index < array.length; index++) {
+//         if (array[index]>max) {
+//             max = array[index];
+//         }
+//     }
+//     console.log(`The largest element in the array is: ${max}`);
+// }
+// basic3([1,5,4,6,7,65,34,-23,0]);
 
 // Array with Odds
 // Create an array with all the odd integers between 1 and 255 (inclusive).
+function basic4(){
+  let array = [];
+  for (let i = 1; i <= 255; i++) {
+    array.push(i);
+  }
+  return(array);
+}
+console.log(basic4());
 
 // Greater Than Y
 // Given an array and a value Y, count and print the number of array values greater than Y.
@@ -55,4 +63,16 @@ basic3([1,5,4,6,7,65,34,-23,0]);
 // Print all odd integers from 1 to 255.
 
 // Iterate and Print Array
+// Iterate through a given array, printing each value.
 
+// Get and Print Average
+// Analyze an array’s values and print the average.
+
+// Square the Values
+// Square each value in a given array, returning that same array with changed values.
+
+// Zero Out Negative Numbers
+// Return the given array, after setting any negative values to zero.
+
+// Shift Array Values
+// Given an array, move all values forward by one index, dropping the first and leaving a '0' value at the end.
