@@ -72,25 +72,34 @@
 // Given an array, print the max, min and average values for that array.
 // Inputs: an array of numbers
 // Outputs: Print the max, min, and average values of the array
-function basic6(array) {
-  let max = array[0];
-  let min = array[0];
-  let sum = 0;
-  for (let i = 0; i < array.length; i++) {
-    if(array[i]>max){
-      max = array[i];
-    }
-    if(array[i]<min){
-      min = array[i];
-    }
-    sum+=array[i];
-  }
-  console.log(`Max value in the array: ${max} \nMin value in the array: ${min} \nAverage for values in the array: ${sum /(array.length)}`);
-}
-basic6([1,4,6,75,23,100]);
+// function basic6(array) {
+//   let max = array[0];
+//   let min = array[0];
+//   let sum = 0;
+//   for (let i = 0; i < array.length; i++) {
+//     if(array[i]>max){
+//       max = array[i];
+//     }
+//     if(array[i]<min){
+//       min = array[i];
+//     }
+//     sum+=array[i];
+//   }
+//   console.log(`Max value in the array: ${max} \nMin value in the array: ${min} \nAverage for values in the array: ${sum /(array.length)}`);
+// }
+// basic6([1,4,6,75,23,100]);
 
 // Swap String For Array Negative Values
 // Replace any negative array values with 'Dojo'.
+function basic7(array){
+  for (let index = 0; index < array.length; index++) {
+    if(array[index]<0){
+      array[index]='Dojo';
+    }
+  }
+  return array;
+}
+console.log(basic7([1,3,-76,4,3,-1]));
 
 // Print Odds 1-255
 // Print all odd integers from 1 to 255.
