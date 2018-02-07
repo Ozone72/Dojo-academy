@@ -1,0 +1,161 @@
+
+/* Container */
+.container {
+    width: 800px;
+    height: 2160px;
+    overflow: auto;
+}
+
+/* Single Element Styles */
+h1 {
+    color: white;
+    margin: auto;
+}
+
+span {
+    font-weight: bold;
+    margin: 10px 5px 0px 5px;
+}
+
+p {
+    margin: 0px 5px 5px 5px;
+}
+/* Repetitive Styles */
+.header, .purp-sqr, .purp-rect, .purp-content, .footer {
+    background-color: #38326D;
+}
+
+.header-grn-strip, .main-grn-separator, .grn-footer-content, .grn-top-footer, .nav-left {
+    background-color: #A7D395;
+}
+
+.header-grn-strip, .purp-sqr, .purp-rect {
+    color: #D9DC9B;
+}
+/* Header Class Styles */
+.header {
+    height: 300px;
+    max-width: 100%;
+}
+
+.header-top {
+    height: 25%;
+    width:100%;
+    padding-left: 10px;
+    padding-top: 10px;
+}
+.header-foot {
+    height: 60px;
+}
+
+.header-grn-strip {
+    height: 175px;
+}
+.purp-sqr {
+    height: 125px;
+    width: 125px;
+    display: inline-block;
+    margin: 18px 10px 10px 11px;
+    padding: 5px;
+}
+
+.purp-sqr p {
+    margin: 15px;
+}
+
+.btn-div {
+    margin: 10px 10px 10px 45px;
+    padding-left: 30px;
+}
+.lil-button {
+    display: inline-block;
+    margin-left: 100px;
+}
+/* Main Styles */
+.main {
+    height: 49%;
+    max-width: 100%;
+}
+
+.purp-rect {
+    height: 150px;
+    width: 250px;
+    display: inline-block;
+    margin: 25px 25px 25px 90px;
+}
+
+.purp-rect-content {
+    margin: 15px;
+}
+
+.main-grn-separator {
+    height: 140px;
+    width: 90%;
+    margin-left: 45px;
+    color: white;
+}
+.main-grn-separator p{
+    padding: 10px;
+}
+
+.nav-left {
+    width: 33%;
+    height: 425px;
+    margin: 25px 25px 25px 10px;
+    padding-left: 5px;
+    vertical-align: top;
+    display: inline-block;
+}
+
+a {
+    color: #0E7E12;
+    margin: 35px 0px 0px 60px; 
+    display: inline-block;
+}
+
+.link-info {
+    width: 60%;
+    height: 425px;
+    display: inline-block;
+}
+.purp-content {
+    width: 100%;
+    height: 50px;
+    margin: 25px 0px 0px 0px;
+}
+
+/* Footer Styles */
+.footer {
+    height: 20%;
+    width: 100%;
+}
+.footer a {
+    margin: 25px 0px 20px 38px;
+    padding-bottom: 5px;
+}
+
+.grn-top-footer {
+    height: 15%;
+    width: 100%;
+    margin-bottom: 50px;
+}
+
+.grn-top-footer a {
+    color: #38326D;
+}
+
+.grn-footer-content {
+    width: 85%;
+    height: 125px;
+    margin: 5px 30px 0px 55px;
+}
+
+.grn-footer-content p{
+    text-align: justify;
+    padding: 50px;
+}
+
+
+
+
+
