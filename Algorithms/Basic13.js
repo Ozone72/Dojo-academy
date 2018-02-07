@@ -121,6 +121,15 @@
 
 // Get and Print Average
 // Analyze an array’s values and print the average.
+function printAvg(array){
+  let avg = 0;
+  for (let i = 0; i < array.length; i++) {
+    avg=avg+array[i];
+  }
+  avg = avg/(array.length);
+  console.log(`The average of the elements in the array is: ${avg}`);
+}
+printAvg([4,7,12,15,4,4,2]);
 
 // Square the Values
 // Square each value in a given array, returning that same array with changed values.
