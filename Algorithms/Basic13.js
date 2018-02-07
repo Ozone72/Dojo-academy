@@ -121,21 +121,46 @@
 
 // Get and Print Average
 // Analyze an array’s values and print the average.
-function printAvg(array){
-  let avg = 0;
-  for (let i = 0; i < array.length; i++) {
-    avg=avg+array[i];
-  }
-  avg = avg/(array.length);
-  console.log(`The average of the elements in the array is: ${avg}`);
-}
-printAvg([4,7,12,15,4,4,2]);
+// function printAvg(array){
+//   let avg = 0;
+//   for (let i = 0; i < array.length; i++) {
+//     avg=avg+array[i];
+//   }
+//   avg = avg/(array.length);
+//   console.log(`The average of the elements in the array is: ${avg}`);
+// }
+// printAvg([4,7,12,15,4,4,2]);
 
 // Square the Values
 // Square each value in a given array, returning that same array with changed values.
+// function sqrVals(array){
+//   for (let i = 0; i < array.length; i++) {
+//     array[i] = array[i]*array[i];  
+//   }
+//   return array;
+// }
+// console.log(sqrVals([0,5,3,4,1]));
 
 // Zero Out Negative Numbers
 // Return the given array, after setting any negative values to zero.
+// function zeroNegs(array){
+//   for (let i = 0; i < array.length; i++) {
+//     if (array[i]<0) {
+//       array[i]=0;
+//     }    
+//   }
+//   return array;
+// }
+// console.log(zeroNegs([-1, -8, 24, 56,-2, 42]));
 
 // Shift Array Values
 // Given an array, move all values forward by one index, dropping the first and leaving a '0' value at the end.
+// function shiftArray(array){
+//   console.log('Start',array);
+//   for (let i = 0; i < array.length; i++) {
+//     array[i]=array[i+1];   
+//   }
+//   array[array.length-1]=0;
+//   console.log('Result:', array);
+// }
+// shiftArray([1,23,4,2,5,3]);
