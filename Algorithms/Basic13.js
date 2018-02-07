@@ -112,6 +112,12 @@
 
 // Iterate and Print Array
 // Iterate through a given array, printing each value.
+// function printArray(array){
+//   for (let i = 0; i < array.length; i++) {
+//     console.log(array[i]);    
+//   }
+// }
+// printArray([-1,4,5,6,"cat","dojo",[3,2]]);
 
 // Get and Print Average
 // Analyze an array’s values and print the average.
