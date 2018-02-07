@@ -41,17 +41,32 @@
 
 // Array with Odds
 // Create an array with all the odd integers between 1 and 255 (inclusive).
-function basic4(){
-  let array = [];
-  for (let i = 1; i <= 255; i++) {
-    array.push(i);
-  }
-  return(array);
-}
-console.log(basic4());
+// Inputs: n/a
+// Outputs: returns an array with odd integers from 1 to 255 inclusive
+// function basic4(){
+//   let array = [];
+//   for (let i = 1; i <= 255; i++) {
+//     array.push(i);
+//   }
+//   return(array);
+// }
+// console.log(basic4());
 
 // Greater Than Y
 // Given an array and a value Y, count and print the number of array values greater than Y.
+// Inputs: an array of numbers, and a number Y to compare to
+// Outputs: a count of the elements in the array that are greater than Y
+// function basic5(array, Y){
+//   let count = 0;
+//   for (let i = 0; i < array.length; i++) {
+//     if(array[i]>Y){
+//       count++;
+//     }
+//   }
+//   // Template literals are awesome
+//   console.log(`Number of elements in the array greater than ${Y}: ${count}`);
+// }
+// basic5([78,2,6,4,5,6,1,23],2);
 
 // Max, Min, Average
 // Given an array, print the max, min and average values for that array.
