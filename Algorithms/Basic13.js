@@ -4,12 +4,12 @@
 // Print all the integers from 1 to 255.
 // Inputs: n/a
 // Outputs: prints to console 1 to 255.
-// function basic1(){
-//     for (let i = 1; i <= 255; i++) {
-//         console.log(i);
-//     }
-// }
-// basic1();
+function printFromTo(){
+    for (let i = 1; i <= 255; i++) {
+        console.log(i);
+    }
+}
+printFromTo();
 
 // Print Sum 0-255
 // Print integers from 0 to 255, and with each integer print the sum so far.
