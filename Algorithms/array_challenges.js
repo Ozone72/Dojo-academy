@@ -92,3 +92,25 @@ var arrEdge = [undefined, Infinity, 4, 0, -1, "Weird", true];
 // secondToLast(arrayStrng);
 // secondToLast(arrMixType);
 // secondToLast(arrEdge);
+
+// Nth-to-Last
+// Return the element that is N-from-array’s-end.
+// Arr, nth
+// Given [1,2,3,4], Nth to last  => 2
+// Return: 3
+function nthToLast(arr, Nth){
+   if(Nth > arr.length){
+       console.log("Returning null");
+   }
+   else {
+       console.log(arr);
+       console.log(arr[arr.length-Nth]);
+       return arr[arr.length-Nth];
+   }
+}
+nthToLast(arrayNum,2);
+nthToLast(arrayNeg,1);
+nthToLast(arrayStrng,5);
+nthToLast(arrMixType,44);
+nthToLast(arrEdge,6);
+
