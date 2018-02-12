@@ -68,3 +68,28 @@ var arrEdge = [undefined, Infinity, 4, 0, -1, "Weird", true];
 // insertAt(arrayStrng, 1, 42);
 // insertAt(arrMixType, 4, 42);
 // insertAt(arrMixType, 42, 42);
+
+// RemoveAt
+// Given an array and an index into the array, remove and return the array value at that index. Do this without using any built-in array methods except pop(). Think of PopFront(arr) as equivalent to RemoveAt(arr,0). 
+// function removeAt(arr, index){
+//     var val = arr[index];
+//     // console.log(arr);
+//     if(index < 0 || index > arr.length){
+//         console.log("Index is outside scope of array - returning null.");
+//         return null;
+//     }
+//     else {
+//         for(var i=index; i<arr.length; i++){
+//             arr[i]=arr[i+1];
+//         }
+//     }   
+//     arr.pop();
+//     // console.log(arr);
+//     // console.log(val);
+//     return val;
+// }
+// removeAt(arrayNum, 2);
+// removeAt(arrayNeg, 1);
+// removeAt(arrayStrng, 3);
+// removeAt(arrMixType, 4);
+// removeAt(arrMixType, 76);
