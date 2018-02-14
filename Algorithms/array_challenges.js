@@ -71,7 +71,26 @@ var arrEdge = [undefined, Infinity, 4, 0, -1, "Weird", true];
 
 // RemoveAt
 // Given an array and an index into the array, remove and return the array value at that index. Do this without using any built-in array methods except pop(). Think of PopFront(arr) as equivalent to RemoveAt(arr,0). 
-// 
+// function removeAt(arr, index){
+//     if(index < 0 || index >= arr.length){
+//         console.log("Returning null");
+//         return null;
+//     }
+//     else {
+//         var val = arr[index];
+//         for(var i=index; i<arr.length; i++){
+//             arr[i]=arr[i+1];
+//         }
+//         arr.pop();
+//         // console.log(arr);
+//         // console.log(val);
+//         return val;
+//     }
+// }
+// removeAt(arrayNum, 2);
+// removeAt(arrayNeg, 1);
+// removeAt(arrayStrng, 0);
+// removeAt(arrMixType, 4);
 
 // Second-to-Last
 // Return the second-to-last element of an array.
@@ -113,4 +132,5 @@ var arrEdge = [undefined, Infinity, 4, 0, -1, "Weird", true];
 // nthToLast(arrayStrng,5);
 // nthToLast(arrMixType,44);
 // nthToLast(arrEdge,6);
+
 
