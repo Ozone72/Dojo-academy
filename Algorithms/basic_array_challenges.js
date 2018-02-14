@@ -163,26 +163,26 @@ var arrEdge = [undefined, Infinity, 4, 0, -1, "Weird", true];
 // Given an array, return the Nth-largest element: there should be (N - 1) elements that are larger. 
 // Given: [1,4,3,2,5,7,6], nth => 3
 // Return: 5
-function nthLargest(arr, Nth){
-    if(arr.length < Nth){
-        console.log("Returning null");
-        return null;
-    }
-    else {
-        for(var i=0; i<arr.length; i++){
-            var temp = arr[i];
-            for (var j=i-1; j>=0 && (arr[j]>temp);j--){
-                arr[j+1]=arr[j];
-            }
-            arr[j+1]=temp;
-        }
-        console.log(arr);
-        var target = arr[arr.length-Nth];
-        console.log(target);
-        return target;
-    }
-}
-nthLargest(arrayNum, 3);
-nthLargest(arrayNeg, 4);
+// function nthLargest(arr, Nth){
+//     if(arr.length < Nth){
+//         console.log("Returning null");
+//         return null;
+//     }
+//     else {
+//         for(var i=0; i<arr.length; i++){
+//             var temp = arr[i];
+//             for (var j=i-1; j>=0 && (arr[j]>temp);j--){
+//                 arr[j+1]=arr[j];
+//             }
+//             arr[j+1]=temp;
+//         }
+//         console.log(arr);
+//         var target = arr[arr.length-Nth];
+//         console.log(target);
+//         return target;
+//     }
+// }
+// nthLargest(arrayNum, 3);
+// nthLargest(arrayNeg, 4);
 
 
