@@ -98,19 +98,19 @@ var arrEdge = [undefined, Infinity, 4, 0, -1, "Weird", true];
 // Arr, nth
 // Given [1,2,3,4], Nth to last  => 2
 // Return: 3
-function nthToLast(arr, Nth){
-   if(Nth > arr.length){
-       console.log("Returning null");
-   }
-   else {
-       console.log(arr);
-       console.log(arr[arr.length-Nth]);
-       return arr[arr.length-Nth];
-   }
-}
-nthToLast(arrayNum,2);
-nthToLast(arrayNeg,1);
-nthToLast(arrayStrng,5);
-nthToLast(arrMixType,44);
-nthToLast(arrEdge,6);
+// function nthToLast(arr, Nth){
+//    if(Nth > arr.length){
+//        console.log("Returning null");
+//    }
+//    else {
+//     //    console.log(arr);
+//     //    console.log(arr[arr.length-Nth]);
+//        return arr[arr.length-Nth];
+//    }
+// }
+// nthToLast(arrayNum,2);
+// nthToLast(arrayNeg,1);
+// nthToLast(arrayStrng,5);
+// nthToLast(arrMixType,44);
+// nthToLast(arrEdge,6);
 
