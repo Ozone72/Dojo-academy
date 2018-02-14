@@ -133,4 +133,56 @@ var arrEdge = [undefined, Infinity, 4, 0, -1, "Weird", true];
 // nthToLast(arrMixType,44);
 // nthToLast(arrEdge,6);
 
+// Second-Largest
+// Return the second-largest element of an array. 
+// Given: [1,2,3,4,5,6,7]
+// Return: 6
+// function secondLargest(arr){
+//     if(arr.length<2){
+//         console.log("Returning null");
+//         return null;
+//     }
+//     else {
+//         for(var i=0; i<arr.length; i++){
+//             var temp = arr[i];
+//             for (var j=i-1; j>=0 && (arr[j]>temp);j--){
+//                 arr[j+1]=arr[j];
+//             }
+//             arr[j+1]=temp;
+//         }
+//         console.log(arr);
+//         var target = arr[arr.length-2];
+//         console.log(target);
+//         return target;
+//     }
+// }
+// secondLargest(arrayNum);
+// secondLargest(arrayNeg);
+
+// Nth-Largest
+// Given an array, return the Nth-largest element: there should be (N - 1) elements that are larger. 
+// Given: [1,4,3,2,5,7,6], nth => 3
+// Return: 5
+// function nthLargest(arr, Nth){
+//     if(arr.length < Nth){
+//         console.log("Returning null");
+//         return null;
+//     }
+//     else {
+//         for(var i=0; i<arr.length; i++){
+//             var temp = arr[i];
+//             for (var j=i-1; j>=0 && (arr[j]>temp);j--){
+//                 arr[j+1]=arr[j];
+//             }
+//             arr[j+1]=temp;
+//         }
+//         console.log(arr);
+//         var target = arr[arr.length-Nth];
+//         console.log(target);
+//         return target;
+//     }
+// }
+// nthLargest(arrayNum, 3);
+// nthLargest(arrayNeg, 4);
+
 
