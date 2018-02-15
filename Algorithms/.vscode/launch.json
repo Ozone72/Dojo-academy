@@ -8,7 +8,7 @@
             "type": "node",
             "request": "launch",
             "name": "Launch Program",
-            "program": "${workspaceFolder}/array_challenges.js"
+            "program": "${file}"
         }
     ]
 }
