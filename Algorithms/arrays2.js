@@ -97,3 +97,27 @@ var arrMix = [{
 //     return arr[num];
 // }
 // console.log(lookupFact(bigArray, 5));
+
+// Shuffle
+// Recreate the shuffle()built into JavaScript, to efficiently shuffle a given array’s values. Do you need to return anything from your function?
+// function createDeck(){
+//     var deck = [];
+//     for(var i=1; i<=52; i++){
+//         deck.push(i);
+//     }
+//     return deck;
+// }
+// var newDeck = createDeck();
+// // console.log(newDeck);
+
+// function shuffle(cards){
+//     var temp;
+//     for(var i=0; i<=51; i++){
+//         var randoCard = Math.floor(Math.random() * 51);
+//         temp = cards[i];
+//         cards[i] = cards[randoCard];
+//         cards[randoCard]=temp;
+//     }
+//     return cards;
+// }
+// console.log(shuffle(newDeck));
