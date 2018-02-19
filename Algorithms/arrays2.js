@@ -112,7 +112,7 @@ var arrMix = [{
 
 // function shuffle(cards){
 //     var temp;
-//     for(var i=0; i<=51; i++){
+//     for(var i=0; i<cards.length; i++){
 //         var randoCard = Math.floor(Math.random() * 51);
 //         temp = cards[i];
 //         cards[i] = cards[randoCard];
