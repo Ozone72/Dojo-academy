@@ -51,7 +51,7 @@ invertHash(beeblebrox);
 // Do not use the built-in reverse() function!
 function revStrng(str) {
   // console.time("strng");
-  // remembr that strings are immutable
+  // remember that strings are immutable
   var newStr = "";
   for (var index = str.length - 1; index >= 0; index--) {
     newStr += str[index];
