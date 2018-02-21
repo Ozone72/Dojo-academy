@@ -15,7 +15,7 @@
 //   console.timeEnd("iSigma");
 //   console.log("sum: ", sum);
 // }
-// // seems to indicate that JavaScript is keeping variables in session?
+// // seems to indicate that JavaScript is keeping variables in a session
 // iSigma(76453);
 // iSigma(10);
 // iSigma(3);
@@ -23,31 +23,36 @@
 // iSigma(1150)
 
 // global array variable used to store values
-var smarterSum = [0];
-function smartSig(array, num) {
-  // used to store sum if the value is not already in the array
-  console.time("smartSig");
-  var sum = 0;
-  if (num <= 0) {
-    console.log(0);
-    return 0;
-  }
-  //   if the result already exists in the array, just return it
-  if (array[num] !== undefined) {
-    console.timeEnd("smartSig");
-    console.log("existed in array: ", array[num]);
-    return array[num];
-  } else {
-    for (var i = 1; i <= num; i++) {
-      sum += i;
-    }
-    // assign sum to it's corresponding index if it doesn't exist
-    smarterSum[num] = sum;
-    console.timeEnd("smartSig");
-    console.log("didn't exist in array: ", smarterSum[num]);
-    return smarterSum[num];
-  }
-}
-smartSig(smarterSum, 76453);
-smartSig(smarterSum, 76453);
-console.log(smarterSum);
+// var smarterSum = [0];
+// function smartSig(num) {
+//   // used to store sum if the value is not already in the array
+//   console.time("smartSig");
+//   var sum = 0;
+//   if (num <= 0) {
+//     console.log(0);
+//     return 0;
+//   }
+//   //   if the result already exists in the array, just return it
+//   if (smarterSum[num] !== undefined) {
+//     console.timeEnd("smartSig");
+//     console.log("existed in smarterSum: ", smarterSum[num]);
+//     return smarterSum[num];
+//   } else {
+//     for (var i = smarterSum.length; i <= num; i++) {
+//       sum += i;
+//       smarterSum.push(sum);
+//     }
+//     // assign sum to it's corresponding index if it doesn't exist
+//     smarterSum[num] = sum;
+//     console.timeEnd("smartSig");
+//     console.log("didn't exist in smarterSum: ", smarterSum[num]);
+//     return smarterSum[num];
+//   }
+// }
+// smartSig(10);
+// console.log(smarterSum);
+// smartSig(1);
+// smartSig(20);
+// smartSig(4);
+// smartSig(5);
+// console.log(smarterSum);
