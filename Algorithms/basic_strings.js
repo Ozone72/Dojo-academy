@@ -1,3 +1,4 @@
+//Basic String Challenges - due 2/25
 // TEST
 var array1 = ["abc", 3, "yo", "extraKey", 42];
 // var array2 = [42, "wassup", true];

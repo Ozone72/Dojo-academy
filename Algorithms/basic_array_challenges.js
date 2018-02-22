@@ -1,16 +1,18 @@
 //Array Challenges homework for 2/14
 //Methods allowed are .push() and .pop() - otherwise, nope.
 //TEST ARRAYS:
-var arrayNum = [1,2,3,65,9,7];
-var arrayNeg = [-3,-4,-11,-20,-23];
+var arrayNum = [1, 2, 3, 65, 9, 7];
+var arrayNeg = [-3, -4, -11, -20, -23];
 var arrayStrng = ["Coding", "Dojo", "Chewy", "nomnom"];
 var arrMixType = [
-    {dog: "Chewy",
-     cat: "Leo"}, 
-     [1,2,3],
-     true,
-     "Puppies rule.",
-     "Kitties drool."
+  {
+    dog: "Chewy",
+    cat: "Leo"
+  },
+  [1, 2, 3],
+  true,
+  "Puppies rule.",
+  "Kitties drool."
 ];
 var arrEdge = [undefined, Infinity, 4, 0, -1, "Weird", true];
 
@@ -31,7 +33,7 @@ var arrEdge = [undefined, Infinity, 4, 0, -1, "Weird", true];
 // pushFront(arrMixType, 42);
 
 // PopFront
-// Given an array, remove and return the value at the beginning of the array. Do this without using any built-in array methods except pop(). 
+// Given an array, remove and return the value at the beginning of the array. Do this without using any built-in array methods except pop().
 // function popFront(arr){
 //     var val = arr[0];
 //     for(var i=0; i<arr.length; i++){
@@ -47,7 +49,7 @@ var arrEdge = [undefined, Infinity, 4, 0, -1, "Weird", true];
 // popFront(arrMixType);
 
 // InsertAt
-// Given an array, index, and additional value, insert the value into the array at the given index. Do this without using built-in array methods. You can think of PushFront(arr,val) as equivalent to InsertAt(arr,0,val). 
+// Given an array, index, and additional value, insert the value into the array at the given index. Do this without using built-in array methods. You can think of PushFront(arr,val) as equivalent to InsertAt(arr,0,val).
 // function insertAt(arr, index, val){
 //     arr.length = arr.length+1;
 //     if(index < 0 || index > arr.length+1){
@@ -70,7 +72,7 @@ var arrEdge = [undefined, Infinity, 4, 0, -1, "Weird", true];
 // insertAt(arrMixType, 42, 42);
 
 // RemoveAt
-// Given an array and an index into the array, remove and return the array value at that index. Do this without using any built-in array methods except pop(). Think of PopFront(arr) as equivalent to RemoveAt(arr,0). 
+// Given an array and an index into the array, remove and return the array value at that index. Do this without using any built-in array methods except pop(). Think of PopFront(arr) as equivalent to RemoveAt(arr,0).
 // function removeAt(arr, index){
 //     if(index < 0 || index >= arr.length){
 //         console.log("Returning null");
@@ -134,7 +136,7 @@ var arrEdge = [undefined, Infinity, 4, 0, -1, "Weird", true];
 // nthToLast(arrEdge,6);
 
 // Second-Largest
-// Return the second-largest element of an array. 
+// Return the second-largest element of an array.
 // Given: [1,2,3,4,5,6,7]
 // Return: 6
 // function secondLargest(arr){
@@ -160,29 +162,27 @@ var arrEdge = [undefined, Infinity, 4, 0, -1, "Weird", true];
 // secondLargest(arrayNeg);
 
 // Nth-Largest
-// Given an array, return the Nth-largest element: there should be (N - 1) elements that are larger. 
+// Given an array, return the Nth-largest element: there should be (N - 1) elements that are larger.
 // Given: [1,4,3,2,5,7,6], nth => 3
 // Return: 5
-function nthLargest(arr, Nth){
-    if(arr.length < Nth){
-        console.log("Returning null");
-        return null;
-    }
-    else {
-        for(var i=0; i<arr.length; i++){
-            var temp = arr[i];
-            for (var j=i-1; j>=0 && (arr[j]>temp);j--){
-                arr[j+1]=arr[j];
-            }
-            arr[j+1]=temp;
-        }
-        console.log(arr);
-        var target = arr[arr.length-Nth];
-        console.log(target);
-        return target;
-    }
-}
-nthLargest(arrayNum, 3);
-nthLargest(arrayNeg, 4);
-
-
+// function nthLargest(arr, Nth){
+//     if(arr.length < Nth){
+//         console.log("Returning null");
+//         return null;
+//     }
+//     else {
+//         for(var i=0; i<arr.length; i++){
+//             var temp = arr[i];
+//             for (var j=i-1; j>=0 && (arr[j]>temp);j--){
+//                 arr[j+1]=arr[j];
+//             }
+//             arr[j+1]=temp;
+//         }
+//         console.log(arr);
+//         var target = arr[arr.length-Nth];
+//         console.log(target);
+//         return target;
+//     }
+// }
+// nthLargest(arrayNum, 3);
+// nthLargest(arrayNeg, 4);
