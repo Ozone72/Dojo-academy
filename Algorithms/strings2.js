@@ -25,13 +25,16 @@
 // return the number 1357924680.
 let myString = "0s1a3y5w7h9a2t4?6!8?0";
 function strDig(string) {
+  // RegEx pattern for finding one or more digits globally in a string
   let pattern = /\d+/g;
+  //   .match() is a string method for matching the RegEx pattern, and returning the results in an array
   let resultArray = string.match(pattern);
   let newString = "";
+  //   looping through the newly created array to create new string of all found digits
   for (let i = 0; i < resultArray.length; i++) {
-    // loop through result array and return an integer
     newString += resultArray[i];
   }
+  //   using the Number() method converts my string of digits to an integer - effectively removing the leading zero
   return Number(newString);
 }
 console.log(strDig(myString));
