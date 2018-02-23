@@ -45,25 +45,22 @@
 // return "TNFL-GPYW".
 // Given "Live from New York, it's Saturday Night!",
 // return "LFNYISN".
-let noLunch = "there's no free lunch  -  gotta pay yer way";
-let snl = "Live from New York, it's Saturday Night!";
-function acronyms(str) {
-  str = str.toUpperCase();
-  let newStr = "";
-  //console.log(str);
-  let regEx = /[A-Z]/;
-  for (let i = 0; i < str.length; i++) {
-    if (str[0] === str.regEx) {
-      console.log("str[0]: ", str[0]);
-      newStr += str[0];
-    }
-    if (str[i] === /\s/ && str[i + 1] === /[A-Z]/) {
-      newStr += str[i + 1];
-    }
-  }
-}
-acronyms(noLunch);
-acronyms(snl);
+// let noLunch = "there's no free lunch  -  gotta pay yer way";
+// let snl = "Live from New York, it's Saturday Night!";
+// function acronyms(str) {
+//   let newStr = "";
+//   if (str[0] !== " ") {
+//     newStr += str[0];
+//   }
+//   for (let i = 1; i < str.length; i++) {
+//     if (str[i] === " " && str[i + 1] !== " ") {
+//       newStr += str[i + 1];
+//     }
+//   }
+//   return newStr.toUpperCase();
+// }
+// console.log("acronyms(noLunch): ", acronyms(noLunch));
+// console.log("acronyms(snl): ", acronyms(snl));
 
 // OPTIONAL:
 // How to retrieve the Ascii numerical value of
