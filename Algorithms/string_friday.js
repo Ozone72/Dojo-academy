@@ -7,12 +7,8 @@
 let parenTrue = "y(3(p)p(3)r)s";
 let parenFalse = "n)0(t(0)k";
 let parenFalse2 = "n(0(p)3";
-let oneOpenParenFalse = "(";
-let oneClosedParenFalse = ")";
-let twoParenWrongOrderFalse = ")(";
-let myTest = "orin(pab)(jack)mike(bb)";
 
-function validParens(str) {
+function validparens(str) {
   let gates = [];
   let check = true;
   //   iterate over the string
@@ -38,11 +34,26 @@ if (gates.length === 0 && check === true) {
 } else {
   return false;
 }
-console.log("validParens(myTest): ", validParens(myTest));
+console.log(validparens(parenTrue);
+console.log(validparens(parenFalse));
+console.log(validparens(parenFalse2));
 
 // Braces Valid
 // Given a string, returns whether the sequence of various parentheses, braces and brackets within it are valid. For example, given the input string "w(a{t}s[o(n{c}o)m]e)h[e{r}e]!", return true. Given "d(i{a}l[t]o)n{e", return false. Given "a(1)s[O(n]0{t)0}k", return false.
-function bracesValid(str) {}
+function bracesValid(str) {
+  let gates = [];
+  let check = true;
+  for (let i = 0; i < str.length && check === true; i++) {
+    if (str[i] === "(") {
+      gates.push(str[i]);
+    }
+    if (str[i] === ")" && gates.length === 0) {
+      check = false;
+    } else {
+      gates.pop();
+    }
+  }
+}
 
 // Is Palindrome
 // Strings like "Able was I, ere I saw Elba" or "Madam, I'm Adam" could be considered palindromes, because (if we ignore spaces, punctuation and capitalization) the letters are the same from front and back.
