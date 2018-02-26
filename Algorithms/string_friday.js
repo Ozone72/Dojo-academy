@@ -34,7 +34,7 @@ if (gates.length === 0 && check === true) {
 } else {
   return false;
 }
-console.log(validparens(parenTrue);
+console.log(validparens(parenTrue));
 console.log(validparens(parenFalse));
 console.log(validparens(parenFalse2));
 
