@@ -41,19 +41,52 @@
 // Braces Valid
 // Given a string, returns whether the sequence of various parentheses, braces and brackets within it are valid. For example, given the input string "w(a{t}s[o(n{c}o)m]e)h[e{r}e]!", return true. Given "d(i{a}l[t]o)n{e", return false. Given "a(1)s[O(n]0{t)0}k", return false.
 // function bracesValid(str) {
-//   let gates = [];
-//   let check = true;
-//   for (let i = 0; i < str.length && check === true; i++) {
-//     if (str[i] === "(") {
-//       gates.push(str[i]);
+//   // declare an array to hold the sequence
+//   let gatesKeeper = [];
+//   //   declare an object to hold the key/value pairs (open/closed) gates
+//   const gatesMatch = {
+//     ")": "(",
+//     "}": "{",
+//     "]": "["
+//   };
+//   for (let idx = 0; idx < str.length; idx++) {
+//     // switch (str[idx]) {
+//     // checks for an opener - if a match, push to the gatekeeper array
+//     if (str[idx] === "(" || str[idx] === "{" || str[idx] === "[") {
+//       gatesKeeper.push(str[idx]);
 //     }
-//     if (str[i] === ")" && gates.length === 0) {
-//       check = false;
-//     } else {
-//       gates.pop();
+//     // does this character match a closing gate?
+//     if (str[idx] === ")" || str[idx] === "}" || str[idx] === "]") {
+//       // if so, does value of this key match last value in pushed to gatesKeeper?
+//       if (gatesMatch[str[idx]] === gatesKeeper[gatesKeeper.length - 1]) {
+//         //   yes?  pop that sucker off
+//         gatesKeeper.pop();
+//       } else {
+//         //   otherwise, invalid
+//         return false;
+//       }
 //     }
 //   }
+//   // If this exists, return false, since we want an empty array
+//   if (gatesKeeper.length > 0) return false;
+//   return true;
 // }
+// console.log(
+//   'bracesValid("w(a{t}s[o(n{c}o)m]e)h[e{r}e]!"): ',
+//   bracesValid("w(a{t}s[o(n{c}o)m]e)h[e{r}e]!")
+// );
+// console.log('bracesValid("d(i{a}l[t]o)n{e"): ', bracesValid("d(i{a}l[t]o)n{e"));
+// console.log(
+//   'bracesValid("a(1)s[O(n]0{t)0}k"): ',
+//   bracesValid("a(1)s[O(n]0{t)0}k")
+// );
+// bracesValid("(now{I[don{t{k}ow}abou(t)this}ma)n");
+// console.log(
+//   'bracesValid("(now{I[don{t{k}ow}abou(t)this}ma)n"): ',
+//   bracesValid("(now{I[don{t{k}ow}abou(t)this}ma)n")
+// );
+// bracesValid("{}(){}{{[]}}");
+// console.log('bracesValid("{}(){}{{[]}}"): ', bracesValid("{}(){}{{[]}}"));
 
 // Is Palindrome
 // Strings like "Able was I, ere I saw Elba" or "Madam, I'm Adam" could be considered palindromes, because (if we ignore spaces, punctuation and capitalization) the letters are the same from front and back.
