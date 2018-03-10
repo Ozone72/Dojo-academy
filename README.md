@@ -1,7 +1,6 @@
-# Coding Dojo Academy
+# [Coding Dojo Academy](http://www.codingdojo.com/academy)
 
-Intro to HTML, CSS and JavaScript projects for:   
-http://www.codingdojo.com/academy/
+Other than the folders containing algorithms and solutions, these files are homework for:
+www.codingdojo.com/academy/intro-to-programming-course
 
-Algorithm folders and solutions are for pilot Coding Dojo Academy Algorithms Classes 
-These are invite-only or alumni-only classes.  They are still in development.  
+ 
