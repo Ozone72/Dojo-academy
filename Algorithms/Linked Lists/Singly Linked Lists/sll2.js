@@ -1,5 +1,5 @@
 // Orin Fletcher
-// Linked Lists
+// Linked Lists 2
 //Node object for Singly Linked List
 function SLLNode(value) {
   this.val = value;
