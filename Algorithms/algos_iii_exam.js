@@ -270,18 +270,11 @@ score = +String.fromCharCode(48);
   try {
     resetsList();
     slist.pushNode(5);
-    if (
-      slist.head &&
-      slist.head.next &&
-      slist.head.next.next &&
-      slist.head.next.next.next &&
-      slist.head.next.next.next.next.val === 5
-    ) {
-      console.log("sList - pushNode - PASS ");
-      score = score + +String.fromCharCode(49);
-    } else {
-      console.log("sList - pushNode - FAIL");
-    }
+    if (slist.head && slist.head.next && slist.head.next && slist.head.next.next 
+            && slist.head.next.next.next && slist.head.next.next.next.val === 5) {
+            console.log("sList - pushNode - PASS ")
+            score = score + +String.fromCharCode(49);
+        } else { console.log("sList - pushNode - FAIL"); }
   } catch (err) {
     console.log("Invalid Test, pushNode, err", err);
   }
