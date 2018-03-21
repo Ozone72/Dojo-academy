@@ -96,46 +96,45 @@ DLList.prototype.kthToLast = function kthToLast(k) {
 dll_list = dll_list.kthToLast(2);
 console.log("dll_list: ", dll_list);
 
-// function isValidDlist(list) {
-//   // checks to see if this list passed in is structured correctly (has both .next and .prev and if list.head and list.tail are in the correct places)
-//   // IN: takes a list
-//   // OUT: returns a boolean
-//   // TEST: list exists; if single node, .next and .prev are both null.
+function isValidDlist(list) {
+  // checks to see if this list passed in is structured correctly (has both .next and .prev and if list.head and list.tail are in the correct places)
+  // IN: takes a list
+  // OUT: returns a boolean
+  // TEST: list exists; if single node, .next and .prev are both null.
+  if (!list) {
+    return false;
+  } else {
+    var current = list.head;
+    var count = 1;
+    while (current) {
+      switch () {
+        case !null:
+          check = true;
+          break;
+        case null:
+          check = true;
+          break;
 
-//   if (!list) {
-//     return false;
-//   } else {
-//     var current = list.head;
-//     var count = 1;
-//     while (current) {
-//       switch () {
-//         case !null:
-//           check = true;
-//           break;
-//         case null:
-//           check = true;
-//           break;
+        default:
+          break;
+      }
+      /* through each iteration where current.next isn't null, need to check:
+      1) That there is a corresponding .prev
+        a) if there isn't, then there is a next without a prev -> return false
+        b)if there is, then keep going.
+      the edge cases are when current.prev === null and when current.next === null
+      need a separate case for both of those
+      if (current.next && current.prev) {
+        check = true;
+      } else {
+        check = false;
+      */
 
-//         default:
-//           break;
-//       }
-//       // through each iteration where current.next isn't null, need to check:
-//       // That there is a corresponding .prev
-//       // if there isn't, then there is a next without a prev -> return false
-//       // if there is, then keep going.
-//       // the edge cases are when current.prev === null and when current.next === null
-//       // need a separate case for both of those
-//       // if (current.next && current.prev) {
-//       //   check = true;
-//       // } else {
-//       //   check = false;
-//       // }
-
-//     current = current.next;
-//     count+=1;
-//   }
-// }
-// isValidDlist(dll_list);
+    current = current.next;
+    count+=1;
+  }
+}
+isValidDlist(dll_list);
 
 // Palindrome - Determine whether given DList nodes' values are a palindrome
 // Takes a list
